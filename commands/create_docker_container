@@ -1,0 +1,15 @@
+#!/bin/bash
+
+mkdir -p `pwd`/binds/buildroot 
+mkdir -p `pwd`/binds/commands
+mkdir -p `pwd`/binds/projects
+mkdir -p `pwd`/binds/transfer 
+
+docker run -it \
+    -v `pwd`/binds/buildroot:/rg350m/buildroot \
+    -v `pwd`/binds/commands:/rg350m/commands \
+    -v `pwd`/binds/projects:/rg350m/projects \
+    -v `pwd`/binds/transfer:/rg350m/transfer \
+    --name rg350m-dev \
+    rg350m-dev
+

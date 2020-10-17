@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker exec -it rg350m-dev bash --login -i
+
