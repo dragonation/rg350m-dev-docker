@@ -30,7 +30,7 @@ ENV LC_ALL en_US.UTF-8
 
 # prepare prebinding directories and environments
 RUN mkdir -p /rg350m && \
-    mkdir -p /rg350m/buildroot && \
+    mkdir -p /rg350m/buildroots && \
     mkdir -p /rg350m/commands && \
     mkdir -p /rg350m/transfer && \
     mkdir -p /rg350m/toolchain
